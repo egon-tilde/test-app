@@ -2,7 +2,7 @@
 module.exports = {
   presets: ["next/babel"],
   plugins:
-    process.env.NODE_ENV === "development"
+    process.env.CODE_VIEW === "true"
       ? [require("./codeview-plugin/index.js")]
       : [],
 };
